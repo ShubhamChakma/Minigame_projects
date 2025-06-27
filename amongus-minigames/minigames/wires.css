@@ -1,0 +1,58 @@
+body {
+  background-color: #0c0f18;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.wire-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 40px auto;
+  width: 600px;
+  height: 400px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 150px;
+  height: 100%;
+  z-index: 2;
+}
+
+.left { align-items: flex-end; }
+.right { align-items: flex-start; }
+
+.wire {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: grab;
+  border: 2px solid white;
+}
+
+svg#wire-lines {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.back-btn {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background: linear-gradient(to right, #ff3c3c, #c40000);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-btn:hover {
+  background: linear-gradient(to right, #c40000, #ff3c3c);
+}
